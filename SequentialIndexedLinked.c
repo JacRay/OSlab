@@ -68,7 +68,7 @@ int indexed(){
         goto x;
     }
     y: count=0;
-    printf("Enter index of each file:");
+    printf("\nEnter index of each file:");
     for(i=0;i<n;i++)
     {
         scanf("%d", &index[i]);
@@ -126,7 +126,7 @@ int linked(){
         goto x;
     }
     y: count=0;
-    printf("Enter next links :");
+    printf("\nEnter next links :");
     for(i=0;i<n-1;i++)
     {
         scanf("%d", &index[i]);
@@ -151,7 +151,7 @@ int linked(){
     else
     {
         printf("File in the index is already allocated \n");
-        printf("Enter another file indexed");
+        printf("Enter another file indexed\n");
         goto y;
     }
     printf("Do you want to enter more file(Yes - 1/No - 0)");
@@ -163,8 +163,8 @@ int linked(){
     getch();
 }
 int main(){
+    int ch;
     do{
-        int ch;
         printf("\n MENU");
         printf("\n 1. Sequential");
         printf("\n 2. Indexed");
