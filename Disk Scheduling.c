@@ -1,5 +1,3 @@
-//Disc Scheduling
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -330,8 +328,7 @@ main ()
 {
   fcfs ();
   sstf ();
-  scan ();
-  cscan ();
+  scan ();  cscan ();
   look ();
   clook ();
 }

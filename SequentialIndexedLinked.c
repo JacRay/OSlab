@@ -119,6 +119,7 @@ int linked(){
     if(f[ind]!=1)
     {
         f[ind] = 1;
+        index[0] = ind;
     }
     else
     {
@@ -127,23 +128,19 @@ int linked(){
     }
     y: count=0;
     printf("\nEnter next links :");
-    for(i=0;i<n-1;i++)
+    for(i=1;i<n;i++)
     {
         scanf("%d", &index[i]);
         if(f[index[i]]==0)
         count++;
     }
-    if(count==n-1 && check(n-1))
+    if(count==n-1 && check(n))
     {
         for(j=0;j<n-1;j++)
         f[index[j]]=1;
         printf("Allocated\n");
         printf("File Indexed\n");
-        for(k=0;k<n-1;k++){
-            if(k == 0){
-                printf("%d-------->%d : %d\n",ind,index[k],f[index[k]]);
-            }
-            else{
+        for(k=1;k<n;k++){
                 printf("%d-------->%d : %d\n",index[k-1],index[k],f[index[k]]);
             }
         }
