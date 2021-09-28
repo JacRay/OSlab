@@ -40,7 +40,7 @@ int sequential(){
     getch();
 }
 int indexed(){
-    int f[100], index[100],i, n, st, len, j, c, k,store[100][100],storesize=0, ind,count=0;
+    int f[100], index[100],i, n, st, len, j, c, k,store[100][100],ind,count=0;
     int check(int size)
     {
         for (unsigned i = 0; i < size; i++)
@@ -58,7 +58,6 @@ int indexed(){
     if(f[ind]!=1)
     {
         f[ind] = 1;
-        store[storesize][0] = ind;
         printf("Enter No of files for the index %d on the disk : \n", ind);
         scanf("%d",&n);
     }
@@ -79,9 +78,7 @@ int indexed(){
     {
         for(j=0;j<n;j++){
             f[index[j]]=1;
-            store[storesize][j+1] = index[j];
         }
-        storesize++;
         printf("Allocated\n");
         printf("File Indexed\n");
         for(k=0;k<n;k++)
