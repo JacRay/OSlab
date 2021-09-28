@@ -55,7 +55,7 @@ int indexed(){
 
     x:printf("Enter the index block: ");
     scanf("%d",&ind);
-    if(f[ind]!=1)
+    if(f[ind]==0)
     {
         f[ind] = 1;
         printf("Enter No of files for the index %d on the disk : \n", ind);
