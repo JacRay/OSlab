@@ -9,17 +9,18 @@ void fifo ()
     {
       available = 0;
        for (k = 0; k < nf; k++)
+       {
 	if (frames[k] == pages[i])
 	 {
 	     available = 1;
 	     break;
-	 }	 
+	 }	 }
       if (available == 0)
 	{
 	  frames[j] = pages[i];
 	  j = (j + 1) % nf;
 	  fault++;
-	}}
+	}
   printf ("Page Faults is  %d\n\n", fault);
 }
 
