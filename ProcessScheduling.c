@@ -362,3 +362,4 @@ int main()
 			Input(ch);
 	}while(ch<5);
 }
+	
