@@ -22,9 +22,8 @@ fcfs ()
     }
 
   printf ("The Seek Sequence \t%d -> ", h);
-  for (i = 0; i < n - 1; i++)
+  for (i = 0; i < n ; i++)
     printf ("%d -> ", arr[i]);
-  printf ("%d\n", arr[i]);
   printf ("Total seek operations\t%d\n", scount);
 }
 
