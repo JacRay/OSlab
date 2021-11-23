@@ -89,20 +89,6 @@ void fcfs()
 	}
 	findavg();
 }
-int sort(int a[], int s)
-{
-		for(int i =0;i<s; i++)
-		{
-			for(int j=i+1;j<s;j++)
-			{
-				if(burst[a[j]]<burst[a[i]])
-				{
-					swap(&a[j],&a[i]);
-				}
-			}
-		}
-		return(a[0]);
-}
 int psort(int a[], int s)
 {
 		for(int i =0;i<s; i++)
